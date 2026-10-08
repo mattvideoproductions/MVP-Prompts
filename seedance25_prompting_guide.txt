@@ -1,0 +1,202 @@
+SEEDANCE 2.5 IN RUNWAY: A PRACTICAL GUIDE TO PHYSICAL CINEMATIC INTROS
+
+The central principle
+
+A useful prompt is a small production plan: references establish what exists, a causal timeline explains what changes, the camera makes those changes readable, and a final physical action reaches the ending frame. The absurd event may be impossible; its local interactions must remain understandable. A chair can outrun traffic, giant gloves can furnish a room, or a person can emerge from an instrument, but grips, weight, occlusion, momentum, scale and object identity should behave consistently.
+
+This guide synthesizes an iterative prompting history, including reported failures and proposed corrections, checked against current Runway documentation. Feedback supports the overall workflow and identifies concrete failures; it does not establish a measured success rate for every instruction. Treat the recommendations as production heuristics, not guarantees or a model benchmark. All examples are anonymous. The 14,500-character ceiling used for the example is a delivery constraint, not a universal documented model limit.
+
+Choose the correct operation before writing
+
+For a new intro anchored by two images, select Seedance 2.5 and use Runway's Keyframe mode: put the empty or initial scene in First Video Frame and the finished composition in Last Video Frame. Assigning those roles in prose does not replace selecting them in the interface. For reference-led generation, assign each input a specific role. For changing actual footage, use Edit; for continuing it, use Extend. A source clip attached as a general reference does not make a generation an edit of that footage. Confirm the selected operation, duration and aspect ratio before generating. Runway currently documents clips up to 30 seconds; do not carry an older model's 15-second ceiling into a 20-second Seedance 2.5 plan. These interface facts are from Runway's help article, linked below.
+
+The pictures are the specification, not decoration
+
+Inspect both actual images before writing. Identify what is present, absent and different: camera position, framing, wall geometry, doorway and hinge side, chair, microphone, desk edges, clothing, hair, accessories, lighting and final expression. A picture called an empty room may already contain cables, a partial boom or furniture at an edge. Preserve those fixtures. Empty should describe the missing actors or missing central setup, not instruct the model to erase the photographed room.
+
+Give each image a bounded job. For example: the first image defines the opening room and composition; the second defines the one person's identity and final seated arrangement. State whether an additional asset supplies only a chair design, only a location, only movement or only sound. Explicitly exclude an irrelevant reference background when necessary. Use the actual reference labels shown by the interface; do not mention nonexistent uploads or assume a manually typed filename is an attached asset.
+
+Match the supplied wardrobe and equipment rather than recycling an old prompt's details. Identify a headset microphone separately from a recording microphone. Keep a distinctive chair's back, armrests, fabric, base and casters consistent. References can anchor visible identity, but they cannot reveal unseen clothing, hidden floor layout or routes outside the frame. Define only the additional details necessary for the action, and do not describe an unseen feature as reference-verified.
+
+Resolve reference contradictions explicitly. An open door at the beginning and closed door at the end require a visible closure or a declared intervening cut. A wider opening and closer ending require a motivated camera move or an explicit edit, not a supposedly locked camera whose lens suddenly changes. If the two frames cannot plausibly belong to one continuous camera path, change the shot plan or prepare compatible frames rather than demand contradictory geometry. The example below uses one restrained approach because the framing change is modest and the assembly needs to remain visible.
+
+Write the ending backward
+
+The end frame is more than a face match. It includes head height, chair placement, torso orientation, gaze, expression, foreground microphone, background door, lighting, depth of field and camera position. Decide how the preceding motion can arrive there before designing the spectacle. A chair must roll to its stopping point and decelerate; a flying person must land hips-first on its seat; a character must physically lower their weight onto the cushion. Allow time for residual movement, a small posture correction and a quiet hold. Two elaborate actions and a perfect seated finish cannot all occupy the last half-second.
+
+The final image should be reached through visible motion, not a reference-image dissolve, pose replacement or last-frame camera jump. Distinguish arrival from settling: contact, weight transfer, recoil or sway, slowing, alignment, then hold. Preserve the same physical chair and person through this process. Keep the frame quiet once aligned; an additional joke, drifting camera, entering character or final sound cue can spoil the join into ordinary footage. In post-production, check the actual join, including exposure, crop and audio, rather than assuming a reference-conditioned last frame is seamless.
+
+Build a causal sequence, not a collection of desired pictures
+
+Begin with a compact premise naming subject, place, event, tone and camera behavior. Then bind references and write a timeline that covers the full requested duration. Runway's current prompting guide recommends explicit asset roles, a summary, a continuous timeline and closing consistency notes; timestamps are pacing guidance rather than guaranteed frame-accurate execution. Put the important action in plain verbs: carries, grips, lowers, contacts, releases, rolls, swivels, rebounds, slows. Adjectives such as epic, realistic, chaotic or cinematic need those visible actions to mean anything.
+
+For every important event, identify origin, path, mechanism, contact, resulting state and what persists afterward. A miniature person leaving a brass instrument begins inside its bell: the rim occludes the body until it clears, and tracking begins only after the feet emerge. A cymbal launch requires visible landing, cymbal deflection and rebound that supplies the acceleration. A carried chair enters already supported, touches carpet before release, and remains on its base. These explanations address the shortcuts a model otherwise takes between attractive pictures.
+
+Tell the viewer what proves the action happened. A doorway entrance shows the whole body and chair crossing the threshold. A lift shows supporting fingers and shadow. A collision shows contact before a change in trajectory. A transformation keeps one part anchored while surfaces unfold around it. A stop shows wheels settling as motion fades. If a hand, camera wipe or cut hides the only evidence, the intended mechanism becomes optional.
+
+Use a simple private state ledger while drafting
+
+For each beat, track where each actor and prop is, who supports it, what form it has, whether it is visible and how it can reach the next beat. An actor outside the room must enter through a declared route. A person who disappears behind a foreground chair must reappear along a plausible continuation. A departed actor cannot reset inside the room. A transformed chair cannot simultaneously remain as an ordinary chair beside its robot version. A cable or attached shield cannot casually change owner. The prompt need not include the ledger as a long list; its paragraphs should embody it.
+
+Use exactly one persistent identity for each important person and prop. Multiple actors benefit from a small set of stable visual identifiers and different roles; avoid describing everyone with the protagonist's reference face. A fixed cast can feel numerous through overlapping foreground, middle-ground and background paths. Adding more actors, wardrobe details and props increases continuity demands. Spend that complexity only where it supports the gag.
+
+Specify the physical relationship that matters
+
+Scale is relational. Describe palm versus torso, instrument bell versus miniature person, vehicle versus doorway, coffin versus carrier, and adult versus chair. A small vehicle carrying a very large load needs clearance and a route that avoids the chair. State constant proportions across cuts and within the scene. A wide-angle view or a camera approach may change apparent size; it must not change actual body size. A dramatic frame should not force the person to become too tall for their chair or doorway.
+
+Differentiate mechanisms. A chair can translate across the floor while its seat and occupant swivel around the vertical post; the camera and room need not rotate. A body launched horizontally through a door should not become an upright self-propelled jump in the next shot. A projectile clears its source before the camera chases it. A planet-impact joke depends on the tiny traveler entering on one side, exiting on the other, and only then triggering a delayed explosion. Separate the cause from the consequence and preserve direction through transitions.
+
+Contact makes impossible events feel photographed. Name useful evidence: caster rotation, foot pushes, planted-foot pivots, carpet compression, cushion deflection, shirt wrinkles, glove-pad flattening, shadows, material flex, rebound and small settling movements. Heavy and light objects respond differently. These cues work better than repeatedly saying realistic physics. Do not overload every beat with particles; add dust, paper or loose objects only where an actual kick, impact or sweep creates them. Fog must not substitute for contact or conceal disappearing characters.
+
+Camera and blocking share one plan
+
+Choose the camera rule for the gag. A locked room shot makes assembly, entrances, evacuation and object continuity easy to compare. A traveling action scene needs tracking that preserves screen direction and keeps the relevant contact visible. A distant static shot can sell scale and a deadpan delayed payoff. A planned close-up can make emergence readable when a wide frame fails. None of these choices is universally superior; choose the smallest camera plan that clearly shows the action.
+
+One continuous shot means no cuts, hidden wipes or final reference snap. If continuity has repeatedly failed and the concept permits editing, declare a small number of deliberate cuts with an explicit incoming state for each next shot. Preserve trajectory, pose, chair, props and location logic across them. Do not demand an unbroken take and then write cut to the next room. Do not call a camera fixed while also asking it to pan, zoom, orbit and tilt. A one-time physical bump must have a visible cause, specified modest direction, immediate stabilization and a persistent new angle.
+
+Control occlusion. A foreground microphone should remain in front of an actor passing behind it; a glove gripping a torso should cover the appropriate portion; an instrument rim should hide the body still inside it. Let momentary occlusion look natural, but do not let it excuse replacements. Avoid a full-frame glove wipe in an assembly shot because it gives the model an opportunity to rebuild the room. Keep face, contact surface and trajectory visible at the decisive instant. The person should stay inside the composition instead of jumping above the frame during the final landing.
+
+Door movement deserves its own geometry
+
+Anchor the door's hinge side, free edge, knob, swing direction and relation to the camera from the actual reference. A body or chair must contact the door before it opens if impact supplies the force. The body clears the opening before a return swing closes it. A retreating person must fully exit before reaching back to pull the same door shut. A door bouncing off a wall and returning is a specific causal gag, not a synonym for opens and closes. If a spring, closer or rebound is needed, establish that mechanism rather than request unexplained natural self-closing.
+
+Comedy comes from commitment, contrast and timing
+
+An overproduced office tournament is communicated through aggressive riding posture, overlapping arrivals, prop challenges, traffic density, serious faces, environmental disruption and event audio. Cheerful smiling workers seated politely in a circle communicate a different scene. Specify performance, not just genre: concentrated, tense, bored, resigned, confused or quietly pleased. Someone bored while their chair effortlessly weaves through fast traffic is funny because the performance contradicts the danger. Giant hands become funny through excessive care, repeated microscopic corrections and the human's restrained reaction.
+
+Make intensity measurable on screen. Several racers can be already moving before crossing a doorway, enter in overlapping succession, then continue through intersecting depths. Loose sheets flutter after a chair clips a stack, and small objects skitter after a visible contact. Do not add arbitrary flying furniture to satisfy more epic. Use a few readable mechanisms and reactions. Deadpan beats require actual time: hold after a traveler exits a planet, let the empty office register, or pause after a meticulous adjustment. Reserve time for the payoff rather than filling every second with escalation.
+
+Transformations conserve the object
+
+Describe the starting form, physical mechanism, order of conversion and final form. A chair becoming a robot should unfold from its own parts and stop existing as an ordinary chair during that state. A pixel character becoming human needs consistent body position and visible material conversion, not a brief flash hiding a replacement. Paper becoming a head needs the paper to crunch, fold and expand through a defined spatial path. Decide whether the original character is a flat sprite, solid block character or ordinary body with pixelated surfaces; these produce different motion and cannot be interchanged silently.
+
+Keep recognition and attachment during change. Limbs remain attached, the face remains coherent, and accessories have a declared fate. If growth occurs, state its trajectory and endpoint rather than letting height drift. Distinguish intentionally suspended material from unsupported ordinary objects. Give the effect enough time to read, then let it stop before the last-frame hold. Avoid generic glitch, glowing dust or energy blast language when the joke depends on an actual mechanical or material process.
+
+Sound is part of the mechanism
+
+Choose whether audio is diegetic only, a background score, or an in-world musical event. Do not let the model guess. Quiet material sounds often sell a tactile scene better than a grand soundtrack. Conversely, an orchestra or tournament may need intentional music; a universal no-music rule would defeat that premise. State source, start, changes and ending. Music behind a closing door should muffle for a physical reason, and a chair squeak should slow with visible rotation. A tiny distant impact sounds distant; a close glove contact sounds soft and close.
+
+Specify dialogue only when it serves the concept. Short urgent shouts can establish a serious event, but arbitrary NPC chatter can distract or create unwanted lip motion. Use clear labeled lines if dialogue is necessary; request no speech when it is not. Avoid narration, subtitles and laugh tracks unless wanted. Keep the final room tone compatible with the footage that follows. Post-production music is a valid separate choice, not evidence that the model failed to obey an absent audio instruction.
+
+Prompt length: spend words on ambiguity, not decoration
+
+Long structured prompts were useful in this workflow because they carried complicated continuity and timing requirements. That does not establish that more characters always yield better video. Extend a prompt when the added sentence defines an unresolved route, contact, identity, timing or final-state constraint. Remove duplicated style adjectives, abandoned premises, conflicting reference descriptions and repeated universal prohibitions. Repetition is most useful at the point of risk: restate the same chair during entry and landing, or the same trajectory on both sides of a cut.
+
+Positive mechanisms should carry most of the prompt. Replace do not teleport with enters through the rear doorway, entire chair crosses the threshold, then follows this rolling path. Keep a short set of targeted exclusions for observed failures: no extra person, no chair replacement, no final dissolve. Excessive negatives without a playable action leave the intended outcome underspecified. Place each critical rule near the event it governs and summarize only the most important continuity at the end.
+
+Count the exact payload after the last revision. Include spaces, punctuation and line breaks; count only the text actually pasted, not an accompanying guide or decorative wrapper. Character length is not token count or word count. Plain ASCII punctuation and consistent LF line breaks make code-point and UTF-16 counts agree; CRLF newlines or unseen copied markup can change the total. An earlier estimate is not proof. For a 14,500 ceiling, a genuinely useful prompt slightly below it is preferable to padding it to exactly 14,500. Leave a small margin, and verify Runway's displayed count before generating.
+
+Inspect the generated clip, then revise the earliest broken dependency
+
+Watch at full speed for story, rhythm, tone and sound. Then inspect the decisive moments slowly: origin inside an instrument, body crossing a door, launch contact, landing, chair persistence, occlusion, transformation completion and final alignment. Inspect before and after a disappearance, not merely the handsome last frame. Record what actually occurs and where; do not describe a planned action as visible evidence. When original video bytes are unavailable, distinguish recalled feedback from a new frame-by-frame review.
+
+Classify the failure before rewriting. A skipped action may need more time or fewer competing events. A teleport needs a supported path and visible boundary crossing. An identity drift needs better asset binding and fewer uncontrolled transformations. An upright office jump after a horizontal launch needs trajectory continuity and seat-first landing. A chair run over by a vehicle needs a mapped route and clearance. A final camera jump needs compatible keyframes and an explicit camera plan. A cheerful tournament needs posture, performance and audio direction, not simply the adjective serious.
+
+Revise the first event that makes later events impossible. Preserve the parts already working. A new prompt should describe the final intended production, not accumulate the conversation's rejected variants. For comparable tests, retain references, mode, duration and settings where possible; change the implicated instruction rather than everything at once. If a mechanism keeps failing, simplify it, make the contact a deliberate close-up, or separate shots when the concept permits. A perfect-looking frame is not a successful sequence if its origin, action or ending is wrong.
+
+A compact reusable writing order
+
+Start with the format and one-sentence event. Bind the actual assets to opening, identity, object design and ending. Define the few persistent actors, props and camera rules. Write continuous timed paragraphs describing action, visible mechanism, performance and relevant sound. Give the last beat a physical arrival and hold. Close with concise continuity notes tied to actual risks. Read the complete prompt as a film that can be staged: every object has an origin, every contact has a consequence, every missing object has an exit, every cut has a matched incoming state, and every reference difference has an explanation.
+
+Sources checked
+
+Runway, Creating with Seedance 2.5: https://help.runwayml.com/hc/en-us/articles/53542207042323-Creating-with-Seedance-2-5
+Runway, Seedance 2.5 Prompts: Structure and Technique: https://runway.com/resources/seedance-2-5-prompt-guide
+
+The first source supports mode selection, explicit reference roles and the current duration capability. The second supports the summary/timeline/consistency structure, positive direction and treating timestamps as pacing guidance. The detailed contact, continuity, comedy and iteration advice above is a synthesis of the prompting history; it is not presented as a claim that Runway documents or guarantees every technique.
+
+WORKED EXAMPLE: 20-SECOND MACRO DOLLHOUSE ASSEMBLY
+
+Assign Image4.png to First Video Frame / @Image 1 and Image16.png to Last Video Frame / @Image 2. Use Seedance 2.5, a 20-second duration and 16:9. The supplied images have been visually inspected. The opening is wider and contains an open door, a partial boom and peripheral fixtures; the ending has a gray-shirted seated person, completed microphone and closed door. The example reconciles those differences rather than erasing the starting evidence. The separate plain-text prompt is the paste-ready payload; this guide and its instructions are not part of its character count. No personal name, account, contact detail or profile history is included.
+
+Verified paste-ready prompt length: 14,342 characters, including LF line breaks and the final newline. This is 158 characters below the requested 14,500 maximum.
+
+20-second photorealistic cinematic comedy intro for Seedance 2.5. In one continuous shot, two enormous white cartoon-glove hands meticulously assemble a real-looking miniature office, gently place the living person into his chair, finish arranging his recording setup, and withdraw, leaving the exact seated ending composition.
+
+REFERENCE ROLES
+@Image 1 is the first frame: the empty beige room, textured carpet, white baseboards, open rear-right door, wall controls, outlets and cables. Empty means no person, gaming chair or completed recording setup. Preserve the partial black boom at lower right, desktop edge at lower left and pale cushions at far right. They already exist; a visible hand must physically move anything that changes position.
+
+@Image 2 defines the one living person's exact face, brown hair, adult proportions, gray T-shirt, black headphones, gray fabric gaming chair, silver recording microphone, round pop filter and completed boom arrangement. Match its final expression, lighting and perspective. His shirt remains gray. The headset's raised side microphone and separate silver recording microphone remain distinct. Use one person, one chair and one recording microphone.
+
+@Image 1 begins wider with the door open; @Image 2 ends closer with it closed. Reach this second state through visible assembly, physical door movement and one smooth camera approach. The reference is a destination physically reached, never a photograph pasted over the action.
+
+CORE VISUAL IDEA
+The photographic office behaves like an exquisite dollhouse being furnished by comically serious giant hands. Only the gloves have cartoon silhouettes, rendered as tangible objects with weight, seams, folds and contact shadows. Their scale makes the familiar room feel miniature. They work like a watchmaker: supported lifts, tiny corrections, patient releases and unnecessary alignment checks.
+
+Comedy comes from obsessive gentleness and his quiet awareness of being arranged. He is alive, breathing and mildly bewildered, accepting it with restrained dignity. He watches a fingertip, balances when lowered and finally looks at camera with @Image 2's faintly amused expression. Keep his performance subtle. His skin and movement stay human, never plastic, mannequin-like or frozen.
+
+HAND DESIGN AND SCALE
+Use exactly two matching white gloves, one left and one right, each with one thumb and three rounded fingers. Broad palms, padded fingertips, short cuffs, fine fabric texture and faint stitching resemble photographed costume gloves. Creases and fingertip compression appear during gripping. Their anatomy and design persist; no additional fingers or hands.
+
+A palm supports his torso or most of the chair seat; a finger is thicker than his forearm. Keep this scale throughout. The room, man and furnishings never shrink or grow. He has normal adult proportions, small relative to the gloves but correctly sized relative to the chair and room. Miniature scale comes from this relationship, realistic materials and close visual attention.
+
+Hands enter across the upper frame from above and in front of the visible set, wrists continuing out of view. Never show their owner or a dollhouse exterior. Keep architecture intact: gloves pass in front of walls, casting shadows, never through solid surfaces. Each new object enters already supported and stays supported until its landing is visible.
+
+MATERIALS AND PHYSICAL CONTACT
+Every placement follows descent, contact, weight transfer and release. Casters compress carpet before the chair is released. His clothing wrinkles against the cushion as it takes his weight. Headphone earcups open slightly to pass over his head. A glove steadies the existing boom joint while the other supports the incoming microphone.
+
+Contact shadows connect fingers, upholstery, clothing and carpet. Fingertips flatten on contact. Released objects remain placed with small settling movements. Nothing hovers, moves without force, turns translucent or fuses into another object. The chair rolls only through a push or weight shift, casters grounded.
+
+PHOTOGRAPHIC LOOK AND CAMERA
+Match warm soft lighting and the references' beige-gray palette. Preserve carpet fibers, fabric weave, skin detail, hair strands, brushed metal and black hardware. Gloves share the room's light and exposure, casting large moving shadows. The room and person stay photographic, without glossy cartoon rendering or an artificial tilt-shift filter.
+
+Start at @Image 1's composition, steady at room level. During final arrangement, make one restrained forward approach with a gentle framing correction toward @Image 2. Perspective changes naturally; walls and doorway never stretch to fit. No orbit, overhead angle, cut, dissolve, wipe, speed ramp, shake or concealed transition.
+
+Use delicate macro focus: near-lens fingers may soften, but grips, landing surfaces and room geometry remain readable. Focus settles smoothly onto his face, reaching the ending reference's clear face and softer background. Stop the camera before the final hold; withdrawing gloves never trigger an angle change.
+
+0.00-1.00 - THE EMPTY DISPLAY
+Begin exactly on @Image 1: no man or chair, door open, existing fixtures unchanged. Register the empty central space briefly. Quiet room tone; faint fabric movement from above suggests something enormous approaching.
+
+1.00-3.00 - A VERY CAREFUL DOOR CORRECTION
+The right glove descends into view from the upper-right foreground. It pauses over the open rear door as if checking the layout. One rounded fingertip gently contacts the door's visible face near its free edge and pushes it closed. The door rotates around its existing hinges on the right side of the doorway, following the actual geometry of @Image 1. Its free edge and dark knob travel together. The glove lifts away only after the door reaches the closed position seen in @Image 2.
+
+The glove treats closing this door like a museum installation: pause before the last few centimeters, then a controlled finish and small latch click. The hallway disappears because the same door blocks it. Controls, outlets and trim stay fixed. The other glove does not compete with this opening gesture.
+
+3.00-5.00 - ARRANGE THE LITTLE BACKGROUND OBJECTS
+The left glove enters carrying the small white headset-like floor object and the yellow soft objects visible in the final reference, supported together in its cupped palm. The right glove helps guide the little group toward the left rear floor area. They lower it beside the wall where it belongs in @Image 2, clear of the future chair position. The objects touch the carpet before the palm opens. A yellow soft object gives a tiny fabric bounce and settles; the white object makes a light, muted contact.
+
+One fingertip nudges the group into absurdly precise alignment, then hovers to evaluate it. Match reference objects rather than inventing decorations. Existing cables remain connected. Far-right cushions may later leave view through framing, never disappearance. The gloves retreat to collect the next item.
+
+5.00-8.00 - INSTALL THE EMPTY CHAIR
+Both gloves carry in @Image 2's one gray gaming chair: one supports beneath the seat and base, the other steadies the upper back. Black armrests, tall gray back, seat and caster base stay connected. It arrives fully formed and empty, with no person hidden inside or behind it.
+
+They lower it into the central floor space with its seat facing toward the camera, aligned with the final recording position. Let us see the base descend and the wheels touch the carpet. The chair settles with a small upholstery creak and muted caster contact. The supporting glove slowly removes its palm from beneath the seat while the other keeps the back stable. The chair remains supported by its own base after release.
+
+One fingertip gives a tiny grounded roll; wheels travel and stop, followed by a small swivel correction. Check the backrest angle and release. It stays empty, with clearance for the incoming person and microphone. This is an overcareful installation, without fast spinning.
+
+8.00-12.00 - PLACE THE LIVING PERSON
+The gloves bring in the living man from @Image 2, already matching its gray shirt, face, hair and adult build. No headphones yet. Natural skin, flexible clothes, normal limbs. One palm supports his back and torso; the other supports his thighs. Knees bent for sitting, arms relaxed near his sides.
+
+Carry him slowly above the chair, face visible between fingers. He glances at the supporting glove, then down with quiet disbelief. Feet hang below bent knees; his neck supports his head and his shirt shifts naturally. No flailing, screaming, doll transformation or broad smile.
+
+They lower him directly onto the same chair. His hips meet the seat, the cushion compresses and his back settles against the backrest. Show this transfer of weight clearly. The glove under his thighs slides out toward the front while his legs settle, and the glove behind his torso loosens only once his back is stable. His own hands find the armrests. He makes a tiny balancing correction, an ordinary human response to being carefully placed by enormous hands.
+
+Finding him slightly off-center, a glove nudges the chair a fraction while the other steadies its back. Move man and chair together, without stretching his body or replacing his pose. Fully supported, he patiently lets this bizarre process finish.
+
+12.00-14.00 - FIT THE HEADPHONES
+The right glove brings in the exact black over-ear headset from @Image 2. The left glove gently steadies the chair back, leaving his face unobstructed. Two rounded fingertips open the earcups slightly, raise the band over his hair and lower it onto his head. The earcups settle over the ears, and the band's position matches the final reference. The raised headset microphone stays attached to the correct side throughout.
+
+He lifts his eyes toward the band; hair compresses beneath it. One earcup sits a fraction high, so the glove corrects it, then needlessly checks the opposite side. This symmetry check is the second comedy beat. He stays patient. The released headset remains fitted, never floating or changing shape.
+
+14.00-16.00 - COMPLETE THE RECORDING MICROPHONE
+The left glove brings in the silver cylindrical microphone with its shock mount and round pop filter as a single coherent supported assembly matching @Image 2. The existing black boom from @Image 1 remains the same physical boom. The right glove steadies its free mounting end while the left lowers the microphone assembly into place, connects it with a short visible seating motion and lets the mount take its weight. No second boom sprouts from the wall or desktop.
+
+The hands pivot the boom at its actual joints and aim the microphone diagonally from the lower-right foreground toward the man's mouth, matching @Image 2. Keep the circular pop filter in its correct relationship to the microphone. Metal, mount, filter and cable move together as attached hardware. The boom makes a quiet hinge creak. A fingertip makes one minuscule angle correction, then holds still until the mount stops wobbling. The man watches this ordinary adjustment as if the giants are his extremely particular sound engineers.
+
+16.00-18.00 - FINAL POSITIONING AND CAMERA APPROACH
+Begin the one slow approach toward the ending viewpoint. Man, chair, door, controls and recording hardware keep their world positions. Perspective and cropping change together. Peripheral objects leave view only through reframing, never deletion or background replacement.
+
+The right glove lightly steadies the chair while the left makes a final tiny correction to the microphone's angle, keeping clear of his face. The man relaxes his shoulders, brings his head into the exact upright orientation of @Image 2 and looks toward the lens. A fingertip pauses near his hair as if considering one last adjustment, then decides against it. This hovering hesitation is the final little joke: even his hair is almost subjected to meticulous dollhouse styling.
+
+His reference expression forms through his own relaxed gaze and small mouth movement; gloves never manipulate his facial features. Their fingers begin lifting away as the framing tightens. Ease the camera to a complete stop at the ending composition.
+
+18.00-20.00 - HANDS AWAY, HUMAN ENDING
+Both gloves lift away and withdraw through the upper edges, without wiping over the lens. Their shadows travel off the man, chair and wall as they leave. Everything remains exactly where they placed it. The microphone gives one tiny residual settling movement that dies away. The chair stays still. The man holds the normal seated pose from @Image 2, with the same face, gray shirt, headphones, chair and foreground recording setup.
+
+Allow a small breath and blink early, then a settled hold through the end. He looks directly at the viewer with the reference expression. Door closed, camera stopped, gloves gone. Finish in live action at the reference composition, without an extra gesture or dissolve into a still.
+
+AUDIO AND FINAL CONTINUITY
+Use quiet, detailed diegetic sound: padded glove fabric shifting, soft contact against painted wood, the door's small latch click, carpet-damped object landings, short caster rolls, chair upholstery and shirt movement, gentle headset placement, a restrained boom-joint creak and room ambience. The sound follows the actual scale, distance and timing of each contact. Huge hands do not require thunderous impacts; their careful handling produces delicate close sounds. No speech, narration, laughter track, music, arcade effects or cartoon boings.
+
+The essential visible chain is empty referenced room, physically closed door, placed background objects, placed empty chair, gently seated living person, fitted headset, connected recording microphone, slight camera approach, withdrawn gloves and settled final pose. Keep exactly one person, one chair, one headset, one recording microphone and two consistent gloves. Preserve actual support, occlusion, scale, identity and object persistence through every transfer. No teleportation, chair swaps, duplicate limbs, hovering props, dissolving gloves, vanishing furniture, warped architecture or final-frame snap. The absurd premise is gigantic cartoon hands; all their interactions with the photographic room and living person feel physically real.
+
